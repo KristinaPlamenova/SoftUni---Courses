@@ -14,4 +14,4 @@ while True:
         print(f"{name} goes to Ravenclaw.")
     elif len(name) > 6:
         print(f"{name} goes to Hufflepuff.")
-        print("love_is_in_the_airs")
+       

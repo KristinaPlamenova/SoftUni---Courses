@@ -1,4 +1,3 @@
-import queue
 from collections import deque
 eaten_food = 0
 money = [int(el) for el in input().split()]

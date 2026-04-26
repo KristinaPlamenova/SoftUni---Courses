@@ -1,0 +1,52 @@
+price = float(input())
+paid = int(input())
+
+diff = (paid * 100) - (price * 100)
+stotinki = 0
+drst = 0
+st20 = 0
+st10 = 0
+ostatak = 0
+ost2 = 0
+n1 = 0
+
+if diff:
+    lev = diff // 100
+    stotinki = diff - (lev * 100)
+    if lev > 0:
+        print(f"{round(lev)} x 1 lev")
+if stotinki:
+    st50 = stotinki // 50
+    drst = stotinki - (st50 * 50)
+    if st50 > 0:
+        print(f"{round(st50)} x 50 stotinki")
+if drst:
+    st20 = drst // 20
+    st10 = drst - (st20 * 20)
+    if st20 > 0:
+        print(f"{round(st20)} x 20 stotinki")
+
+if st10:
+    stt10 = st10 // 10
+    ostatak = st10 - (stt10 * 10)
+    if stt10 > 0:
+        print(f"{round(stt10)} x 10 stotinki")
+
+if ostatak:
+    ost = ostatak // 5
+    ost2 = ostatak - (ost * 5)
+    if ost > 0:
+        print(f"{round(ost)} x 5 stotinki")
+
+if ost2:
+    n2 = ost2 // 2
+    n1 = ost2 - (n2 * 2)
+    if n2 > 0:
+        print(f"{round(n2)} x 2 stotinki")
+if n1:
+    n = n1 // 1
+    if n > 0:
+        if n > 1:
+            print(f"{round(n)} x 1 stotinki")
+        else:
+            print(f"{round(n)} x 1 stotinka")

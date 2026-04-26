@@ -1,0 +1,21 @@
+array1 = input()
+array2 = input()
+
+
+for index in range(len(array1)):
+    if ord(array1[index]) < ord(array2[index]):
+        print("first")
+        break
+    elif ord(array1[index]) > ord(array2[index]):
+        print("second")
+        break
+    else:
+        if array1 == array2:
+            print("equal")
+            break
+        elif len(array1) < len(array2):
+            print("first")
+            break
+        else:
+            print("second")
+            break

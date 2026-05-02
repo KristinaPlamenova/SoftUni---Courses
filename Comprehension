@@ -1,0 +1,3 @@
+animals = ['cat', 'dog', 'elephant', 'cucumber']
+new_animals = [animal for animal in animals if len(animal) > 5]
+print(new_animals)

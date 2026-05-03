@@ -1,0 +1,3 @@
+my_list = ["hello", "world", "python", "list"]
+reversed_list = [a[::-1].upper() for a in my_list]
+print(reversed_list)

@@ -1,0 +1,9 @@
+new_item = input().split(',')
+
+copy_new = []
+
+for num in new_item:
+    if num not in copy_new:
+        copy_new.append(num)
+
+print(','.join(copy_new))

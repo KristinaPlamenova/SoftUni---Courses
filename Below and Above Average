@@ -1,0 +1,20 @@
+nums = [int(x) for x in input().split(",")]
+total = sum(nums)
+amount = len(nums)
+avg = (total / amount)
+
+below = []
+above = []
+
+for a in nums:
+    if float(a) > avg:
+        above.append(a)
+    elif float(a) < avg:
+        below.append(a)
+
+
+
+
+print(f"avg: {avg:.2f}")
+print(f"below: {','.join([str(int(a)) for a in below])}")
+print(f"above: {','.join([str(int(a)) for a in above])}")

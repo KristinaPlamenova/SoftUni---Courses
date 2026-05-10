@@ -1,0 +1,16 @@
+new_item = input().split(',')
+negative = []
+zero = []
+positive = []
+total = []
+
+for a in new_item:
+    if int(a) > 0:
+        positive.append(a)
+    elif int(a) == 0:
+        zero.append(a)
+    elif int(a) < 0:
+        negative.append(a)
+
+total = negative + zero + positive
+print(','.join(total))

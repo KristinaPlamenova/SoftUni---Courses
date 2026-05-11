@@ -1,0 +1,5 @@
+nums = [int(x) for x in input().split(", ")]
+
+
+new_nums = sorted(nums, reverse=True)
+print(*new_nums, sep=", ")

@@ -1,0 +1,13 @@
+num = int(input())
+
+for _ in range(num):
+    nums = [int(x) for x in input().split(",")]
+    tr = True
+    for index in range(len(nums)-1):
+        if nums[index] > nums[index + 1]:
+            tr = False
+
+    if tr:
+        print("true")
+    else:
+        print("false")

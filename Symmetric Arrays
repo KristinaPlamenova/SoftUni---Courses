@@ -1,0 +1,15 @@
+num = int(input())
+
+for _ in range(num):
+    nums = [int(x) for x in input().split(" ")]
+    it = len(nums) // 2
+    tr = True
+    for index in range(it):
+
+        if nums[index] != nums[len(nums) - 1 - index]:
+            tr = False
+
+    if tr:
+        print("Yes")
+    else:
+        print("No")

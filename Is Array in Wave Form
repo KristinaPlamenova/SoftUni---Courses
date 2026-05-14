@@ -1,0 +1,14 @@
+nums = [int(x) for x in input().split(" ")]
+tr = True
+for index in range(len(nums) - 2):
+    if nums[index] > nums[index + 1] < nums[index + 2]:
+        pass
+    elif nums[index] < nums[index + 1] > nums[index + 2]:
+        pass
+    else:
+        print("no")
+        tr = False
+        break
+
+if tr:
+    print("yes")
